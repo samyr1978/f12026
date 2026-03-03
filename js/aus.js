@@ -28,11 +28,11 @@ atualizarContador();
 
 
 let cronograma = [
-    {tipo: 'Treino 1', data: '05 MAR', hora: '22:30', canal: ''},
-    {tipo: 'Treino 2', data: '06 MAR', hora: '02:00', canal: ''},
-    {tipo: 'Treino 3', data: '06 MAR', hora: '22:30', canal: ''},
-    {tipo: 'Classificação', data: '07 MAR', hora: '02:00', canal: ''},
-    {tipo: 'Corrida', data: '08 MAR', hora: '01:00', canal: ''}
+    {tipo: 'Treino 1', data: '05 MAR', hora: '22:30', canal: 'Sportv3/Sportv4k'},
+    {tipo: 'Treino 2', data: '06 MAR', hora: '02:00', canal: 'Sportv3/Sportv4k'},
+    {tipo: 'Treino 3', data: '06 MAR', hora: '22:30', canal: 'Sportv3/Sportv4k'},
+    {tipo: 'Classificação', data: '07 MAR', hora: '02:00', canal: 'Sportv3/Sportv4k'},
+    {tipo: 'Corrida', data: '08 MAR', hora: '01:00', canal: 'Sportv3/Sportv4k/Globo'}
 ]
 
 // Cronograma
@@ -240,6 +240,7 @@ function funcResultadoCorrida() {
     `).join('');    
 }
 funcResultadoCorrida();
+
 
 
 
