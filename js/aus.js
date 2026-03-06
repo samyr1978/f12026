@@ -8,7 +8,7 @@ const dataFormatada = data.toLocaleDateString('pt-BR');
 
 function atualizarContador() {
     // Define a data alvo
-    const dataAlvo = new Date(2026, 2, 5, 22, 30, 0).getTime();
+    const dataAlvo = new Date(2026, 2, 6, 22, 30, 0).getTime();
     const agora = new Date().getTime();
     const diferenca = dataAlvo - agora;
    
@@ -28,11 +28,11 @@ atualizarContador();
 
 
 let cronograma = [
-    {tipo: 'Treino 1', data: '05 MAR', hora: '22:30', canal: 'Sportv3/Sportv4k'},
-    {tipo: 'Treino 2', data: '06 MAR', hora: '02:00', canal: 'Sportv3/Sportv4k'},
-    {tipo: 'Treino 3', data: '06 MAR', hora: '22:30', canal: 'Sportv3/Sportv4k'},
-    {tipo: 'Classificação', data: '07 MAR', hora: '02:00', canal: 'Sportv3/Sportv4k'},
-    {tipo: 'Corrida', data: '08 MAR', hora: '01:00', canal: 'Sportv3/Sportv4k/Globo'}
+    {tipo: 'Treino 1', data: '05 MAR', hora: '22:30', canal: 'Sportv3 | Globoplay | GE'},
+    {tipo: 'Treino 2', data: '06 MAR', hora: '02:00', canal: 'Sportv3 | Globoplay | GE'},
+    {tipo: 'Treino 3', data: '06 MAR', hora: '22:30', canal: 'Sportv3 | Globoplay | GE'},
+    {tipo: 'Classificação', data: '07 MAR', hora: '02:00', canal: 'Sportv3 | Globoplay | GE'},
+    {tipo: 'Corrida', data: '08 MAR', hora: '01:00', canal: 'Globo | Sportv3 | Globoplay | GE'}
 ]
 
 // Cronograma
@@ -240,7 +240,6 @@ function funcResultadoCorrida() {
     `).join('');    
 }
 funcResultadoCorrida();
-
 
 
 
