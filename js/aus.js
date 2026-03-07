@@ -8,7 +8,7 @@ const dataFormatada = data.toLocaleDateString('pt-BR');
 
 function atualizarContador() {
     // Define a data alvo
-    const dataAlvo = new Date(2026, 2, 6, 22, 30, 0).getTime();
+    const dataAlvo = new Date(2026, 2, 8, 1, 0, 0).getTime();
     const agora = new Date().getTime();
     const diferenca = dataAlvo - agora;
    
@@ -54,70 +54,70 @@ funcTabelaCronograma();
 // gridLargadaCorrida
 let gridLargadaCorrida = [
     {nome: "Pierre Gasly", nacionalidade: "França", equipe: "Alpine", 
-        link: "https://www.formula1.com/en/drivers/pierre-gasly", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/pierre-gasly", pos: '14', pts: ''},
     
     {nome: "Franco Colapinto", nacionalidade: " Argentina", equipe: "Alpine ", 
-        link: "https://www.formula1.com/en/drivers/franco-colapinto", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/franco-colapinto", pos: '16', pts: ''},
             
     {nome: "Fernando Alonso", nacionalidade: "Espanha", equipe: "Aston Martin", 
-        link: "https://www.formula1.com/en/drivers/fernando-alonso", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/fernando-alonso", pos: '17', pts: ''},
             
-    {nome: "Lance Stroll", nacionalidade: "Canadá", equipe: "Aston Martin", 
-        link: "https://www.formula1.com/en/drivers/lance-stroll", pos: '', pts: ''},
+    //{nome: "Lance Stroll", nacionalidade: "Canadá", equipe: "Aston Martin", 
+       // link: "https://www.formula1.com/en/drivers/lance-stroll", pos: '', pts: ''},
             
     {nome: "Nico Hulkenberg", nacionalidade: "Alemanha", equipe: "Audi", 
-        link: "https://www.formula1.com/en/drivers/nico-hulkenberg", pos:'', pts: ''},
+        link: "https://www.formula1.com/en/drivers/nico-hulkenberg", pos:'11', pts: ''},
     
     {nome: "Gabriel Bortoleto", nacionalidade: "Brasil", equipe: "Audi", 
-        link: "https://www.formula1.com/en/drivers/gabriel-bortoleto", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/gabriel-bortoleto", pos: '10', pts: ''},
             
     {nome: "Sergio Perez", nacionalidade: "México", equipe: "Cadillac", 
-        link: "https://www.formula1.com/en/drivers/sergio-perez", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/sergio-perez", pos: '18', pts: ''},
             
     {nome: "Valteri Bottas", nacionalidade: "Finlândia", equipe: "Cadillac", 
-        link: "https://www.formula1.com/en/drivers/valtteri-bottas", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/valtteri-bottas", pos: '19', pts: ''},
             
     {nome: "Charles Leclerc", nacionalidade: "Monaco", equipe: "Ferrari", 
-        link: "https://www.formula1.com/en/drivers/charles-leclerc", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/charles-leclerc", pos: '4', pts: ''},
             
     {nome: "Lewis Hamilton", nacionalidade: "Inglaterra", equipe: "Ferrari", 
-        link: "https://www.formula1.com/en/drivers/lewis-hamilton", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/lewis-hamilton", pos: '7', pts: ''},
             
     {nome: "Estaban Ocon", nacionalidade: "França", equipe: "Haas F1 Team", 
-        link: "https://www.formula1.com/en/drivers/esteban-ocon", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/esteban-ocon", pos: '13', pts: ''},
             
     {nome: "Oliver Bearman", nacionalidade: "Inglaterra", equipe: "Haas F1 Team", 
-        link: "https://www.formula1.com/en/drivers/oliver-bearman", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/oliver-bearman", pos: '12', pts: ''},
             
     {nome: "Lando Norris", nacionalidade: "Inglaterra", equipe: "McLaren", 
-        link: "https://www.formula1.com/en/drivers/lando-norris", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/lando-norris", pos: '6', pts: ''},
             
     {nome: "Oscar Piastri", nacionalidade: "Austrália", equipe: "McLaren", 
-        link: "https://www.formula1.com/en/drivers/oscar-piastri", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/oscar-piastri", pos: '5', pts: ''},
             
     {nome: "George Russell", nacionalidade: "Inglaterra", equipe: "Mercedes", 
-        link: "https://www.formula1.com/en/drivers/george-russell", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/george-russell", pos: '1', pts: ''},
             
     {nome: "Kimi Antonelli", nacionalidade: "Itália", equipe: "Mercedes", 
-        link: "https://www.formula1.com/en/drivers/kimi-antonelli", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/kimi-antonelli", pos: '2', pts: ''},
             
     {nome: "Liam Lawson", nacionalidade: "Nova Zelândia", equipe: "Racing Bulls", 
-        link: "https://www.formula1.com/en/drivers/liam-lawson", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/liam-lawson", pos: '8', pts: ''},
             
     {nome: "Arvid Lindblad", nacionalidade: "Inglaterra", equipe: "Racing Bulls", 
-        link: "https://www.formula1.com/en/drivers/arvid-lindblad", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/arvid-lindblad", pos: '9', pts: ''},
             
-    {nome: "Max Verstappen", nacionalidade: "Holanda", equipe: "Red Bull Racing", 
-        link: "https://www.formula1.com/en/drivers/max-verstappen", pos: '2pos', pts: ''},
+    //{nome: "Max Verstappen", nacionalidade: "Holanda", equipe: "Red Bull Racing", 
+      //  link: "https://www.formula1.com/en/drivers/max-verstappen", pos: '', pts: ''},
             
     {nome: "Isack Hadjar", nacionalidade: "França", equipe: "Red Bull Racing", 
-        link: "https://www.formula1.com/en/drivers/isack-hadjar", pos: '', pts: ''},
+        link: "https://www.formula1.com/en/drivers/isack-hadjar", pos: '3', pts: ''},
             
-    {nome: "Carlos Sainz", nacionalidade: "Espanha", equipe: "Williams", 
-        link: "https://www.formula1.com/en/drivers/carlos-sainz", pos: '', pts: ''},
+    //{nome: "Carlos Sainz", nacionalidade: "Espanha", equipe: "Williams", 
+      //  link: "https://www.formula1.com/en/drivers/carlos-sainz", pos: '', pts: ''},
             
     {nome: "Alexander Albon", nacionalidade: "Tailândia", equipe: "Williams", 
-        link: "https://www.formula1.com/en/drivers/alexander-albon", pos: '', pts: ''}
+        link: "https://www.formula1.com/en/drivers/alexander-albon", pos: '15', pts: ''}
     ];
 
 // Carrega os dados dos pilotos
