@@ -123,6 +123,15 @@ header {
     border-radius: 8px;
 }
 
+/* Oculta as colunas */
+.coluna#col1 {
+    display: block; /* Grid de Largada */
+}
+
+.coluna#col2 {
+    display: none; /* Resultado da Corrida */
+}
+
 @media (max-width: 768px) {
     .container-colunas {
         flex-direction: column;
