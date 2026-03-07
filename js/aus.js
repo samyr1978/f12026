@@ -62,8 +62,8 @@ let gridLargadaCorrida = [
     {nome: "Fernando Alonso", nacionalidade: "Espanha", equipe: "Aston Martin", 
         link: "https://www.formula1.com/en/drivers/fernando-alonso", pos: '17', pts: ''},
             
-    //{nome: "Lance Stroll", nacionalidade: "Canadá", equipe: "Aston Martin", 
-       // link: "https://www.formula1.com/en/drivers/lance-stroll", pos: '', pts: ''},
+    {nome: "Lance Stroll", nacionalidade: "Canadá", equipe: "Aston Martin", 
+       // link: "https://www.formula1.com/en/drivers/lance-stroll", pos: '22', pts: ''},
             
     {nome: "Nico Hulkenberg", nacionalidade: "Alemanha", equipe: "Audi", 
         link: "https://www.formula1.com/en/drivers/nico-hulkenberg", pos:'11', pts: ''},
@@ -107,14 +107,14 @@ let gridLargadaCorrida = [
     {nome: "Arvid Lindblad", nacionalidade: "Inglaterra", equipe: "Racing Bulls", 
         link: "https://www.formula1.com/en/drivers/arvid-lindblad", pos: '9', pts: ''},
             
-    //{nome: "Max Verstappen", nacionalidade: "Holanda", equipe: "Red Bull Racing", 
-      //  link: "https://www.formula1.com/en/drivers/max-verstappen", pos: '', pts: ''},
+    {nome: "Max Verstappen", nacionalidade: "Holanda", equipe: "Red Bull Racing", 
+      //  link: "https://www.formula1.com/en/drivers/max-verstappen", pos: '20', pts: ''},
             
     {nome: "Isack Hadjar", nacionalidade: "França", equipe: "Red Bull Racing", 
         link: "https://www.formula1.com/en/drivers/isack-hadjar", pos: '3', pts: ''},
             
-    //{nome: "Carlos Sainz", nacionalidade: "Espanha", equipe: "Williams", 
-      //  link: "https://www.formula1.com/en/drivers/carlos-sainz", pos: '', pts: ''},
+    {nome: "Carlos Sainz", nacionalidade: "Espanha", equipe: "Williams", 
+      //  link: "https://www.formula1.com/en/drivers/carlos-sainz", pos: '21', pts: ''},
             
     {nome: "Alexander Albon", nacionalidade: "Tailândia", equipe: "Williams", 
         link: "https://www.formula1.com/en/drivers/alexander-albon", pos: '15', pts: ''}
@@ -240,6 +240,7 @@ function funcResultadoCorrida() {
     `).join('');    
 }
 funcResultadoCorrida();
+
 
 
 
