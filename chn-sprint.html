@@ -6,7 +6,27 @@
     <link rel="stylesheet" href="css/style.css">
     <title>GP da China</title>
     <style>
-        
+        /* Oculta as colunas */
+.coluna#col1 {
+    display: block; /* Cronograma */
+}
+
+.coluna#col2 {
+    display: none; /* Classificação/Grid de Largada Sprint */
+}
+
+.coluna#col3 {
+    display: none; /* Resultado da Corrida Sprint*/
+}
+
+.coluna#col4 {
+    display: none; /* Classificação/Grid de Largada Corrida */
+}
+
+.coluna#col5 {
+    display: none; /* Resultado da Corrida */
+}
+
     </style>    
       
 </head>
@@ -52,7 +72,7 @@
     <!-- Content Container -->
     <div class="container-colunas">
         
-        <div class="coluna">
+        <div class="coluna" id="col1">
             <h2>1º Treino Livre em: <span id="regressiva"></span></h2>
             <div class="table-wrapper">
                 <table>
@@ -72,7 +92,7 @@
             </div>
         </div>
 
-        <div class="coluna">
+        <div class="coluna" id="col2">
             <div class="table-wrapper">
                 <table>
                     <caption>Grid de Largada Sprint</caption>
@@ -91,7 +111,7 @@
             </div>
         </div>
 
-        <div class="coluna">
+        <div class="coluna" id="col3">
             <div class="table-wrapper">
                 <table>
                     <caption>Resultado Corrida Sprint</caption>
@@ -111,7 +131,7 @@
             </div>
         </div>
        
-        <div class="coluna">
+        <div class="coluna" id="col4">
             <div class="table-wrapper">
                 <table>
                     <caption>Grid de Largada Corrida</caption>
@@ -130,7 +150,7 @@
             </div>
         </div>
 
-         <div class="coluna">
+         <div class="coluna" id="col5">
             <div class="table-wrapper">
                 <table>
                     <caption>Resultado da Corrida</caption>

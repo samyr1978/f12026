@@ -123,14 +123,12 @@ header {
     border-radius: 8px;
 }
 
-/* Oculta as colunas */
-.coluna#col1 {
-    display: block; /* Grid de Largada */
+.obs {
+    font-size: 0.9em;
+    font-variant: small-caps;
 }
 
-.coluna#col2 {
-    display: none; /* Resultado da Corrida */
-}
+
 
 @media (max-width: 768px) {
     .container-colunas {
@@ -153,7 +151,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
-    font-size: 13px;
+    font-size: 1em;
 }
 
 table caption {

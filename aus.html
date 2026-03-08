@@ -6,7 +6,20 @@
     <link rel="stylesheet" href="css/style.css">
     <title>GP da Austrália</title>
     <style>
-        
+        /* Oculta as colunas */
+.coluna#col1 {
+    display: none; /* Cronograma */
+}
+
+.coluna#col2 {
+    display: block; /* Classificação/Grid de Largada */
+}
+
+.coluna#col3 {
+    display: block; /* Resultado da Corrida */
+}
+
+
     </style>    
       
 </head>
@@ -52,8 +65,8 @@
     <!-- Content Container -->
     <div class="container-colunas">
         
-        <div class="coluna">
-            <h2>Corrida em: <span id="regressiva"></span></h2>
+        <div class="coluna" id="col1">
+            <h2><span id="regressiva"></span></h2>
             <div class="table-wrapper">
                 <table>
                     <caption>Cronograma</caption>
@@ -73,7 +86,7 @@
         </div>
         
        
-        <div class="coluna" id="col1">
+        <div class="coluna" id="col2">
             <div class="table-wrapper">
                 <table>
                     <caption>Classificação/Grid de Largada</caption>
@@ -89,10 +102,14 @@
                         <!-- O JavaScript preencherá os <td> aqui -->
                     </tbody>
                 </table>
+                <p class="obs">Note: Stroll, Sainz e Verstappen receberam permissão para largar após não conseguirem 
+                    registrar um tempo de volta dentro de 107% do tempo mais rápido do Q1 na 
+                    qualificação.
+                </p>
             </div>
         </div>
 
-         <div class="coluna" id="col2">
+         <div class="coluna" id="col3">
             <div class="table-wrapper">
                 <table>
                     <caption>Resultado da Corrida</caption>
@@ -109,6 +126,10 @@
                         <!-- O JavaScript preencherá os <td> aqui -->
                     </tbody>
                 </table>
+                <p class="obs">NC (Not Classified / Não Classificado)<br>
+                    DNF (Did Not Finish / Não Terminou)<br>
+                    DNS (Did Not Start / Não Largou)
+                </p>
             </div>
         </div>
         
