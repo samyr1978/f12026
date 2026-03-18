@@ -148,7 +148,7 @@ funcPilotosCorrida();
             link: "https://www.formula1.com/en/teams/aston-martin", pos:'11', pts: '0'},
             
         {equipe: "Haas F1 Team", 
-            link: "https://www.formula1.com/en/teams/haas", pos:'4', pts: '7'},
+            link: "https://www.formula1.com/en/teams/haas", pos:'4', pts: '17'},
             
         {equipe: "Alpine", 
             link: "https://www.formula1.com/en/teams/alpine", pos:'7', pts: '10'},
