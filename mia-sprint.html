@@ -6,7 +6,27 @@
     <link rel="stylesheet" href="css/style.css">
     <title>GP de Miami</title>
     <style>
-        
+          /* Oculta as colunas */
+.coluna#col1 {
+    display: block; /* Cronograma */
+}
+
+.coluna#col2 {
+    display: none; /* Classificação/Grid de Largada Sprint */
+}
+
+.coluna#col3 {
+    display: none; /* Resultado da Corrida Sprint*/
+}
+
+.coluna#col4 {
+    display: none; /* Classificação/Grid de Largada Corrida */
+}
+
+.coluna#col5 {
+    display: none; /* Resultado da Corrida */
+}
+
     </style>    
       
 </head>
@@ -21,11 +41,9 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html" title="Home">HOME</a></li>
-                    <li><a href="aus.html"  title="Austrália">AUSTRÁLIA</a></li>
-                    <li><a href="chn-sprint.html" title="China">CHINA</a></li>
+                    <li><a href="aus.html"  title="Austrália"><del>AUSTRÁLIA</del></a></li>
+                    <li><a href="chn-sprint.html" title="China"><del>CHINA</del></a></li>
                     <li><a href="jpn.html" title="Japão">JAPÃO</a></li>
-                    <li><a href="bhr.html" title="Bahrain">BAHREIN</a></li>
-                    <li><a href="sau.html" title="Arábia Saudita">ARÁBIA SAUDITA</a></li>
                     <li><a href="mia-sprint.html" class="active" title="Miami">MIAMI</a></li>
                     <li><a href="can-sprint.html" title="Canadá">CANADÁ</a></li>
                     <li><a href="mon.html" title="Mônaco">MÔNACO</a></li>
@@ -52,7 +70,7 @@
     <!-- Content Container -->
     <div class="container-colunas">
         
-        <div class="coluna">
+        <div class="coluna" id="col1">
             <h2>1º Treino Livre em: <span id="regressiva"></span></h2>
             <div class="table-wrapper">
                 <table>
@@ -72,7 +90,7 @@
             </div>
         </div>
 
-        <div class="coluna">
+        <div class="coluna" id="col2">
             <div class="table-wrapper">
                 <table>
                     <caption>Grid de Largada Sprint</caption>
@@ -91,7 +109,7 @@
             </div>
         </div>
 
-        <div class="coluna">
+        <div class="coluna" id="col3">
             <div class="table-wrapper">
                 <table>
                     <caption>Resultado Corrida Sprint</caption>
@@ -111,7 +129,7 @@
             </div>
         </div>
        
-        <div class="coluna">
+        <div class="coluna" id="col4">
             <div class="table-wrapper">
                 <table>
                     <caption>Grid de Largada Corrida</caption>
@@ -130,7 +148,7 @@
             </div>
         </div>
 
-         <div class="coluna">
+         <div class="coluna" id="col5">
             <div class="table-wrapper">
                 <table>
                     <caption>Resultado da Corrida</caption>
