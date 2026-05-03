@@ -16,11 +16,11 @@
 }
 
 .coluna#col3 {
-    display: none; /* Resultado da Corrida Sprint*/
+    display: block; /* Resultado da Corrida Sprint*/
 }
 
 .coluna#col4 {
-    display: none; /* Classificação/Grid de Largada Corrida */
+    display: block; /* Classificação/Grid de Largada Corrida */
 }
 
 .coluna#col5 {
@@ -71,7 +71,7 @@
     <div class="container-colunas">
         
         <div class="coluna" id="col1">
-            <h2>1º Treino Livre em: <span id="regressiva"></span></h2>
+            <h2>Corrida em: <span id="regressiva"></span></h2>
             <div class="table-wrapper">
                 <table>
                     <caption>Cronograma</caption>
@@ -106,6 +106,10 @@
                         <!-- O JavaScript preencherá os <td> aqui -->
                     </tbody>
                 </table>
+                <p class="obs">NC (Not Classified / Não Classificado)<br>
+                    Nota: O tempo de volta de Albon na SQ1, de 1:30.988, foi excluído por exceder os 
+                    limites da pista, e todos os seus tempos de volta na SQ2 foram posteriormente excluídos.
+                </p>
             </div>
         </div>
 
@@ -126,6 +130,9 @@
                         <!-- O JavaScript preencherá os <td> aqui -->
                     </tbody>
                 </table>
+                <p class="obs">Nota: Antonelli recebeu uma penalização de cinco segundos por exceder os 
+                    limites da pista. Bortoleto foi desclassificado por uma não conformidade técnica.
+                </p>
             </div>
         </div>
        
@@ -145,6 +152,9 @@
                         <!-- O JavaScript preencherá os <td> aqui -->
                     </tbody>
                 </table>
+                <p class="obs">Nota: Hadjar foi desqualificado por uma não conformidade técnica.
+
+                </p>
             </div>
         </div>
 
