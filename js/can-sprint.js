@@ -19,7 +19,7 @@ function atualizarContador() {
         const segundos = Math.floor((diferenca % (1000 * 60)) / 1000); 
             
     // Exibe o resultado 
-    document.getElementById('regressiva').innerHTML = `${dias} dias, ${horas} hrs, ${minutos} min`;
+    // document.getElementById('regressiva').innerHTML = `${dias} dias, ${horas} hrs, ${minutos} min`;
 }
 
 // Atualiza a interface a cada 1 segundo (1000ms)
@@ -38,7 +38,7 @@ let cronograma = [
 // Cronograma
 function funcTabelaCronograma() {
     const corpo = document.getElementById('corpoTabelaCronograma');
-    const finalizados = ['']        
+    const finalizados = ['Treino 1']        
     corpo.innerHTML = cronograma.map((p, i) =>`
         <tr>
            <td>${finalizados.includes(p.tipo) ? `<del>${p.tipo}</del>` : p.tipo}</td>
