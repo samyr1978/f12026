@@ -6,14 +6,25 @@
     <link rel="stylesheet" href="css/style.css">
     <title>GP de Barcelona</title>
     <style>
-        
+        /* Oculta as colunas */
+        .coluna#col1 {
+            display: block; /* Cronograma */
+        }
+
+        .coluna#col2 {
+            display: none; /* Classificação/Grid de Largada */
+        }
+
+        .coluna#col3 {
+            display: none; /* Resultado da Corrida */
+        }
     </style>    
       
 </head>
 <body>
     <!-- Header-->
     <header><h1>GP de Barcelona</h1></header>
-    <!-- Navigation Bar -->
+     <!-- Navigation Bar -->
         <nav class="navbar">
             
             <input type="checkbox" id="toggler">
@@ -21,13 +32,11 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html" title="Home">HOME</a></li>
-                    <li><a href="aus.html"  title="Austrália">AUSTRÁLIA</a></li>
-                    <li><a href="chn-sprint.html" title="China">CHINA</a></li>
-                    <li><a href="jpn.html" title="Japão">JAPÃO</a></li>
-                    <li><a href="bhr.html" title="Bahrain">BAHREIN</a></li>
-                    <li><a href="sau.html" title="Arábia Saudita">ARÁBIA SAUDITA</a></li>
-                    <li><a href="mia-sprint.html" title="Miami">MIAMI</a></li>
-                    <li><a href="can-sprint.html" title="Canadá">CANADÁ</a></li>
+                    <li><a href="aus.html" title="Austrália"><del>AUSTRÁLIA</del></a></li>
+                    <li><a href="chn-sprint.html" title="China"><del>CHINA</del></li>
+                    <li><a href="jpn.html" title="Japão"><del><del>JAPÃO</del></del></a></li>
+                    <li><a href="mia-sprint.html" title="Miami"><del>MIAMI</del></a></li>
+                    <li><a href="can-sprint.html" title="Canadá"><del>CANADÁ</del></a></li>
                     <li><a href="mon.html" title="Mônaco">MÔNACO</a></li>
                     <li><a href="bar.html" class="active" title="Barcelona">BARCELONA</a></li>
                     <li><a href="aut.html" title="Áustria">ÁUSTRIA</a></li>
@@ -52,8 +61,8 @@
     <!-- Content Container -->
     <div class="container-colunas">
         
-        <div class="coluna">
-            <h2>1º Treino Livre em: <span id="regressiva"></span></h2>
+        <div class="coluna" id="col1">
+            <h2><span id="regressiva"></span></h2>
             <div class="table-wrapper">
                 <table>
                     <caption>Cronograma</caption>
@@ -71,11 +80,12 @@
                 </table>
             </div>
         </div>
+        
        
-        <div class="coluna">
+        <div class="coluna" id="col2">
             <div class="table-wrapper">
                 <table>
-                    <caption>Grid de Largada</caption>
+                    <caption>Classificação/Grid de Largada</caption>
                     <thead>
                         <tr>
                             <th>Pos.</th>
@@ -88,10 +98,12 @@
                         <!-- O JavaScript preencherá os <td> aqui -->
                     </tbody>
                 </table>
+                <p class="obs">
+                </p>
             </div>
         </div>
 
-         <div class="coluna">
+         <div class="coluna" id="col3">
             <div class="table-wrapper">
                 <table>
                     <caption>Resultado da Corrida</caption>
@@ -108,11 +120,14 @@
                         <!-- O JavaScript preencherá os <td> aqui -->
                     </tbody>
                 </table>
+                <p class="obs">
+                </p>
             </div>
         </div>
         
         
     </div>
+
 
 
     <footer>
