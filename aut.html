@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>GP da Áustria</title>
+    <title>GP de Mônaco</title>
     <style>
-        
+        /* Oculta as colunas */
+        .coluna#col1 {
+            display: block; /* Cronograma */
+        }
+
+        .coluna#col2 {
+            display: none; /* Classificação/Grid de Largada */
+        }
+
+        .coluna#col3 {
+            display: none; /* Resultado da Corrida */
+        }
+
     </style>    
       
 </head>
@@ -21,16 +33,14 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html" title="Home">HOME</a></li>
-                    <li><a href="aus.html"  title="Austrália">AUSTRÁLIA</a></li>
-                    <li><a href="chn-sprint.html" title="China">CHINA</a></li>
-                    <li><a href="jpn.html" title="Japão"><del>JAPÃO</del></a></li>
-                    <li><a href="bhr.html" title="Bahrain">BAHREIN</a></li>
-                    <li><a href="sau.html" title="Arábia Saudita">ARÁBIA SAUDITA</a></li>
-                    <li><a href="mia-sprint.html" title="Miami">MIAMI</a></li>
-                    <li><a href="can-sprint.html" title="Canadá">CANADÁ</a></li>
-                    <li><a href="mon.html" title="Mônaco">MÔNACO</a></li>
+                    <li><a href="aus.html" title="Austrália"><del>AUSTRÁLIA</del></a></li>
+                    <li><a href="chn-sprint.html" title="China"><del>CHINA</del></li>
+                    <li><a href="jpn.html" title="Japão"><del><del>JAPÃO</del></del></a></li>
+                    <li><a href="mia-sprint.html" title="Miami"><del>MIAMI</del></a></li>
+                    <li><a href="can-sprint.html" title="Canadá"><del>CANADÁ</del></a></li>
+                    <li><a href="mon.html"  class="active" title="Mônaco">MÔNACO</a></li>
                     <li><a href="bar.html" title="Barcelona">BARCELONA</a></li>
-                    <li><a href="aut.html" class="active" title="Áustria">ÁUSTRIA</a></li>
+                    <li><a href="aut.html" title="Áustria">ÁUSTRIA</a></li>
                     <li><a href="gbr-sprint.html" title="Inglaterra">INGLATERRA</a></li>
                     <li><a href="bel.html" title="Bélgica">BÉLGICA</a></li>
                     <li><a href="hun.html" title="Hungria">HUNGRIA</a></li>
@@ -52,8 +62,8 @@
     <!-- Content Container -->
     <div class="container-colunas">
         
-        <div class="coluna">
-            <h2>1º Treino Livre em: <span id="regressiva"></span></h2>
+        <div class="coluna" id="col1">
+            <h2><span id="regressiva"></span></h2>
             <div class="table-wrapper">
                 <table>
                     <caption>Cronograma</caption>
@@ -71,11 +81,12 @@
                 </table>
             </div>
         </div>
+        
        
-        <div class="coluna">
+        <div class="coluna" id="col2">
             <div class="table-wrapper">
                 <table>
-                    <caption>Grid de Largada</caption>
+                    <caption>Classificação/Grid de Largada</caption>
                     <thead>
                         <tr>
                             <th>Pos.</th>
@@ -88,10 +99,14 @@
                         <!-- O JavaScript preencherá os <td> aqui -->
                     </tbody>
                 </table>
+                <p class="obs">Note: Stroll, Sainz e Verstappen receberam permissão para largar após não conseguirem 
+                    registrar um tempo de volta dentro de 107% do tempo mais rápido do Q1 na 
+                    qualificação.
+                </p>
             </div>
         </div>
 
-         <div class="coluna">
+         <div class="coluna" id="col3">
             <div class="table-wrapper">
                 <table>
                     <caption>Resultado da Corrida</caption>
@@ -108,6 +123,10 @@
                         <!-- O JavaScript preencherá os <td> aqui -->
                     </tbody>
                 </table>
+                <p class="obs">NC (Not Classified / Não Classificado)<br>
+                    DNF (Did Not Finish / Não Terminou)<br>
+                    DNS (Did Not Start / Não Largou)
+                </p>
             </div>
         </div>
         

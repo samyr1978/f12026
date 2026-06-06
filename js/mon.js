@@ -8,7 +8,7 @@ const dataFormatada = data.toLocaleDateString('pt-BR');
 
 function atualizarContador() {
     // Define a data alvo
-    const dataAlvo = new Date(2026, 5, 5, 8, 30, 0).getTime();
+    const dataAlvo = new Date(2026, 5, 7, 10, 0, 0).getTime();
     const agora = new Date().getTime();
     const diferenca = dataAlvo - agora;
    
@@ -38,10 +38,10 @@ let cronograma = [
 // Cronograma
 function funcTabelaCronograma() {
     const corpo = document.getElementById('corpoTabelaCronograma');
-    const finalizados = [''] // Inserir aqui as etapas finalizadas. ex: Treino 1        
+    const finalizados = ['Treino 1', 'Treino 2', 'Treino 3'] // Inserir aqui as etapas finalizadas. ex: Treino 1        
     corpo.innerHTML = cronograma.map((p, i) =>`
         <tr>
-           <td>${finalizados.includes(p.tipo) ? `<del>${p.tipo}</del>` : p.tipo}</td>
+           <td>${finalizados.includes(p.tipo) ? `<del style='background-color: yellow'>${p.tipo}</del>` : p.tipo}</td>
            <td>${p.data}</td>
            <td>${p.hora}</td>
            <td>${p.canal}</td>
@@ -53,7 +53,7 @@ funcTabelaCronograma();
 
 // gridLargadaCorrida
 let gridLargadaCorrida = [
-    {nome: "Pierre Gasly", nacionalidade: "França", equipe: "Alpine", 
+    /*{nome: "Pierre Gasly", nacionalidade: "França", equipe: "Alpine", 
         link: "https://www.formula1.com/en/drivers/pierre-gasly", pos: '', pts: ''},
     
     {nome: "Franco Colapinto", nacionalidade: " Argentina", equipe: "Alpine ", 
@@ -117,7 +117,7 @@ let gridLargadaCorrida = [
         link: "https://www.formula1.com/en/drivers/carlos-sainz", pos: '', pts: ''},
             
     {nome: "Alexander Albon", nacionalidade: "Tailândia", equipe: "Williams", 
-        link: "https://www.formula1.com/en/drivers/alexander-albon", pos: '', pts: ''}
+        link: "https://www.formula1.com/en/drivers/alexander-albon", pos: '', pts: ''}*/
     ];
 
 // Carrega os dados dos pilotos
@@ -148,7 +148,7 @@ funcGridLargadaCorrida();
 
 // resultadoCorrida
 let resultadoCorrida = [
-    {nome: "Pierre Gasly", nacionalidade: "França", equipe: "Alpine", 
+    /*{nome: "Pierre Gasly", nacionalidade: "França", equipe: "Alpine", 
         link: "https://www.formula1.com/en/drivers/pierre-gasly", pos: '', pts: ''},
     
     {nome: "Franco Colapinto", nacionalidade: " Argentina", equipe: "Alpine ", 
@@ -212,7 +212,7 @@ let resultadoCorrida = [
         link: "https://www.formula1.com/en/drivers/carlos-sainz", pos: '', pts: ''},
             
     {nome: "Alexander Albon", nacionalidade: "Tailândia", equipe: "Williams", 
-        link: "https://www.formula1.com/en/drivers/alexander-albon", pos: '', pts: ''}
+        link: "https://www.formula1.com/en/drivers/alexander-albon", pos: '', pts: ''}*/
     ];
 
 // Carrega os dados dos pilotos

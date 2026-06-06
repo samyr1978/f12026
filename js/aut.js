@@ -8,7 +8,7 @@ const dataFormatada = data.toLocaleDateString('pt-BR');
 
 function atualizarContador() {
     // Define a data alvo
-    const dataAlvo = new Date(2026, 5, 26, 8, 30, 0).getTime();
+    const dataAlvo = new Date(2026, 5, 7, 10, 0, 0).getTime();
     const agora = new Date().getTime();
     const diferenca = dataAlvo - agora;
    
@@ -28,20 +28,20 @@ atualizarContador();
 
 
 let cronograma = [
-    {tipo: 'Treino 1', data: '26 JUN', hora: '08:30', canal: ''},
-    {tipo: 'Treino 2', data: '26 JUN', hora: '12:00', canal: ''},
-    {tipo: 'Treino 3', data: '27 JUN', hora: '07:30', canal: ''},
-    {tipo: 'Classificação', data: '27 JUN', hora: '11:00', canal: ''},
-    {tipo: 'Corrida', data: '28 JUN', hora: '10:00', canal: ''}
+    {tipo: 'Treino 1', data: '05 JUN', hora: '08:30', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Treino 2', data: '05 JUN', hora: '12:00', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Treino 3', data: '06 JUN', hora: '07:30', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Classificação', data: '06 JUN', hora: '11:00', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Corrida', data: '07 JUN', hora: '10:00', canal: 'Globo | Sportv | Globoplay | GE'}
 ]
 
 // Cronograma
 function funcTabelaCronograma() {
     const corpo = document.getElementById('corpoTabelaCronograma');
-            
+    const finalizados = [''] // Inserir aqui as etapas finalizadas. ex: Treino 1        
     corpo.innerHTML = cronograma.map((p, i) =>`
         <tr>
-           <td>${p.tipo}</td>
+           <td>${finalizados.includes(p.tipo) ? `<del style='background-color: yellow'>${p.tipo}</del>` : p.tipo}</td>
            <td>${p.data}</td>
            <td>${p.hora}</td>
            <td>${p.canal}</td>
