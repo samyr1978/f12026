@@ -8,7 +8,7 @@ const dataFormatada = data.toLocaleDateString('pt-BR');
 
 function atualizarContador() {
     // Define a data alvo
-    const dataAlvo = new Date(2026, 5, 7, 10, 0, 0).getTime();
+    const dataAlvo = new Date(2026, 5, 28, 10, 0, 0).getTime();
     const agora = new Date().getTime();
     const diferenca = dataAlvo - agora;
    
@@ -19,7 +19,7 @@ function atualizarContador() {
         const segundos = Math.floor((diferenca % (1000 * 60)) / 1000); 
             
     // Exibe o resultado 
-    document.getElementById('regressiva').innerHTML = `${dias} dias, ${horas} hrs, ${minutos} min`;
+    document.getElementById('regressiva').innerHTML = `<span style='color:blue'>Corrida em : </span> ${dias} dias, ${horas} hrs, ${minutos} min`;
 }
 
 // Atualiza a interface a cada 1 segundo (1000ms)
@@ -28,11 +28,11 @@ atualizarContador();
 
 
 let cronograma = [
-    {tipo: 'Treino 1', data: '05 JUN', hora: '08:30', canal: 'Sportv | Globoplay | GE'},
-    {tipo: 'Treino 2', data: '05 JUN', hora: '12:00', canal: 'Sportv | Globoplay | GE'},
-    {tipo: 'Treino 3', data: '06 JUN', hora: '07:30', canal: 'Sportv | Globoplay | GE'},
-    {tipo: 'Classificação', data: '06 JUN', hora: '11:00', canal: 'Sportv | Globoplay | GE'},
-    {tipo: 'Corrida', data: '07 JUN', hora: '10:00', canal: 'Globo | Sportv | Globoplay | GE'}
+    {tipo: 'Treino 1', data: '26 JUN', hora: '08:30', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Treino 2', data: '26 JUN', hora: '12:00', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Treino 3', data: '27 JUN', hora: '07:30', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Classificação', data: '27 JUN', hora: '11:00', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Corrida', data: '28 JUN', hora: '10:00', canal: 'Globo | Sportv | Globoplay | GE'}
 ]
 
 // Cronograma
