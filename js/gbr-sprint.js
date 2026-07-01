@@ -32,7 +32,7 @@ let cronograma = [
     {tipo: 'Classificação Sprint', data: '3 JUL', hora: '12:30', canal: 'Sportv | Globoplay| GE'},
     {tipo: 'Sprint', data: '4 JUL', hora: '08:00', canal: 'Sportv | Globoplay | GE'},
     {tipo: 'Classificação', data: '4 JUL', hora: '12:00', canal: 'Sportv | Globoplay | GE'},
-    {tipo: 'Corrida', data: '5 JUL', hora: '11:00', canal: 'Sportv | Globoplay | GE'}
+    {tipo: 'Corrida', data: '5 JUL', hora: '11:00', canal: 'Globo | Sportv | Globoplay | GE'}
 ]
 
 // Cronograma
