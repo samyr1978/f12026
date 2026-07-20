@@ -6,7 +6,26 @@
     <link rel="stylesheet" href="css/style.css">
     <title>GP da Holanda</title>
     <style>
-        
+          /* Oculta as colunas */
+.coluna#col1 {
+    display: block; /* Cronograma */
+}
+
+.coluna#col2 {
+    display: none; /* Classificação/Grid de Largada Sprint */
+}
+
+.coluna#col3 {
+    display: none; /* Resultado da Corrida Sprint*/
+}
+
+.coluna#col4 {
+    display: none; /* Classificação/Grid de Largada Corrida */
+}
+
+.coluna#col5 {
+    display: none; /* Resultado da Corrida */
+}
     </style>    
       
 </head>
@@ -20,20 +39,18 @@
             <label for="toggler" class="hamburguer-icon">&#9776</label>
             <div class="nav-links">
                 <ul>
-                    <li><a href="index.html" title="Home">HOME</a></li>
-                    <li><a href="aus.html"  title="Austrália">AUSTRÁLIA</a></li>
-                    <li><a href="chn-sprint.html" title="China">CHINA</a></li>
-                    <li><a href="jpn.html" title="Japão">JAPÃO</a></li>
-                    <li><a href="bhr.html" title="Bahrain">BAHREIN</a></li>
-                    <li><a href="sau.html" title="Arábia Saudita">ARÁBIA SAUDITA</a></li>
-                    <li><a href="mia-sprint.html" title="Miami">MIAMI</a></li>
-                    <li><a href="can-sprint.html" title="Canadá">CANADÁ</a></li>
-                    <li><a href="mon.html" title="Mônaco">MÔNACO</a></li>
-                    <li><a href="bar.html" title="Barcelona">BARCELONA</a></li>
-                    <li><a href="aut.html" title="Áustria">ÁUSTRIA</a></li>
-                    <li><a href="gbr-sprint.html" title="Inglaterra">INGLATERRA</a></li>
-                    <li><a href="bel.html" title="Bélgica">BÉLGICA</a></li>
-                    <li><a href="hun.html" title="Hungria">HUNGRIA</a></li>
+                     <li><a href="index.html" title="Home">HOME</a></li>
+                    <li><a href="aus.html"  class="active" title="Austrália">AUSTRÁLIA</a></li>
+                    <li><a href="chn-sprint.html" title="China"><del>CHINA</del></li>
+                    <li><a href="jpn.html" title="Japão"><del>JAPÃO</del></a></li>
+                    <li><a href="mia-sprint.html" title="Miami"><del>MIAMI</del></a></li>
+                    <li><a href="can-sprint.html" title="Canadá"><del>CANADÁ</del></a></li>
+                    <li><a href="mon.html" title="Mônaco"><del>MÔNACO</del></a></li>
+                    <li><a href="bar.html" title="Barcelona"><del>BARCELONA</del></a></li>
+                    <li><a href="aut.html" title="Áustria"><del>ÁUSTRIA</del></a></li>
+                    <li><a href="gbr-sprint.html" title="Inglaterra"><del>INGLATERRA</del></a></li>
+                    <li><a href="bel.html" title="Bélgica"><del>BÉLGICA</del></a></li>
+                    <li><a href="hun.html" title="Hungria"><del>HUNGRIA</del></a></li>
                     <li><a href="ned-sprint.html" class="active" title="Holanda">HOLANDA</a></li>
                     <li><a href="ita.html" title="Itália">ITÁLIA</a></li>
                     <li><a href="esp.html" title="Espanha">ESPANHA</a></li>
@@ -52,8 +69,8 @@
     <!-- Content Container -->
     <div class="container-colunas">
         
-        <div class="coluna">
-            <h2>1º Treino Livre em: <span id="regressiva"></span></h2>
+        <div class="coluna" id="col1">
+            <h2>Corrida em: <span id="regressiva"></span></h2>
             <div class="table-wrapper">
                 <table>
                     <caption>Cronograma</caption>
@@ -72,7 +89,7 @@
             </div>
         </div>
 
-        <div class="coluna">
+        <div class="coluna" id="col2">
             <div class="table-wrapper">
                 <table>
                     <caption>Grid de Largada Sprint</caption>
@@ -91,7 +108,7 @@
             </div>
         </div>
 
-        <div class="coluna">
+        <div class="coluna" id="col3">
             <div class="table-wrapper">
                 <table>
                     <caption>Resultado Corrida Sprint</caption>
@@ -108,10 +125,13 @@
                         <!-- O JavaScript preencherá os <td> aqui -->
                     </tbody>
                 </table>
+                 <p class="obs">
+                  
+                </p>
             </div>
         </div>
        
-        <div class="coluna">
+        <div class="coluna" id="col4">
             <div class="table-wrapper">
                 <table>
                     <caption>Grid de Largada Corrida</caption>
@@ -130,7 +150,7 @@
             </div>
         </div>
 
-         <div class="coluna">
+         <div class="coluna" id="col5">
             <div class="table-wrapper">
                 <table>
                     <caption>Resultado da Corrida</caption>
@@ -147,6 +167,9 @@
                         <!-- O JavaScript preencherá os <td> aqui -->
                     </tbody>
                 </table>
+                <p class="obs">
+                    
+                </p>
             </div>
         </div>
         

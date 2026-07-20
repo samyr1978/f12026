@@ -38,10 +38,10 @@ let cronograma = [
 // Cronograma
 function funcTabelaCronograma() {
     const corpo = document.getElementById('corpoTabelaCronograma');
-            
+    const finalizados = ['']        
     corpo.innerHTML = cronograma.map((p, i) =>`
         <tr>
-           <td>${p.tipo}</td>
+           <td>${finalizados.includes(p.tipo) ? `<del style='background-color: yellow'> ${p.tipo}</del>` : p.tipo}</td>
            <td>${p.data}</td>
            <td>${p.hora}</td>
            <td>${p.canal}</td>
