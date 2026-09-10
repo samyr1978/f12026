@@ -29,10 +29,10 @@ atualizarContador();
 // Dados dos Pilotos
 let pilotos = [
     {nome: "Pierre Gasly", nacionalidade: "França", equipe: "Alpine", 
-        link: "https://www.formula1.com/en/drivers/pierre-gasly", pos: '10', pts: '44'},
+        link: "https://www.formula1.com/en/drivers/pierre-gasly", pos: '10', pts: '41'},
     
     {nome: "Franco Colapinto", nacionalidade: " Argentina", equipe: "Alpine ", 
-        link: "https://www.formula1.com/en/drivers/franco-colapinto", pos: '12', pts: '19'},
+        link: "https://www.formula1.com/en/drivers/franco-colapinto", pos: '12', pts: '21'},
             
     {nome: "Fernando Alonso", nacionalidade: "Espanha", equipe: "Aston Martin", 
         link: "https://www.formula1.com/en/drivers/fernando-alonso", pos: '19', pts: '3'},
@@ -56,7 +56,7 @@ let pilotos = [
         link: "https://www.formula1.com/en/drivers/charles-leclerc", pos: '5', pts: '155'},
             
     {nome: "Lewis Hamilton", nacionalidade: "Inglaterra", equipe: "Ferrari", 
-        link: "https://www.formula1.com/en/drivers/lewis-hamilton", pos: '3', pts: '183'},
+        link: "https://www.formula1.com/en/drivers/lewis-hamilton", pos: '3', pts: '191'},
             
     {nome: "Estaban Ocon", nacionalidade: "França", equipe: "Haas F1 Team", 
         link: "https://www.formula1.com/en/drivers/esteban-ocon", pos: '18', pts: '3'},
@@ -65,28 +65,28 @@ let pilotos = [
         link: "https://www.formula1.com/en/drivers/oliver-bearman", pos: '13', pts: '18'},
             
     {nome: "Lando Norris", nacionalidade: "Inglaterra", equipe: "McLaren", 
-        link: "https://www.formula1.com/en/drivers/lando-norris", pos: '4', pts: '159'},
+        link: "https://www.formula1.com/en/drivers/lando-norris", pos: '4', pts: '171'},
             
     {nome: "Oscar Piastri", nacionalidade: "Austrália", equipe: "McLaren", 
-        link: "https://www.formula1.com/en/drivers/oscar-piastri", pos: '7', pts: '104'},
+        link: "https://www.formula1.com/en/drivers/oscar-piastri", pos: '7', pts: '116'},
             
     {nome: "George Russell", nacionalidade: "Inglaterra", equipe: "Mercedes", 
-        link: "https://www.formula1.com/en/drivers/george-russell", pos: '2', pts: '183'},
+        link: "https://www.formula1.com/en/drivers/george-russell", pos: '2', pts: '201'},
             
     {nome: "Kimi Antonelli", nacionalidade: "Itália", equipe: "Mercedes", 
-        link: "https://www.formula1.com/en/drivers/kimi-antonelli", pos: '1', pts: '242'},
+        link: "https://www.formula1.com/en/drivers/kimi-antonelli", pos: '1', pts: '267'},
             
     {nome: "Liam Lawson", nacionalidade: "Nova Zelândia", equipe: "Red Bull Racing", 
-        link: "https://www.formula1.com/en/drivers/liam-lawson", pos: '9', pts: '49'},
+        link: "https://www.formula1.com/en/drivers/liam-lawson", pos: '9', pts: '51'},
             
     {nome: "Arvid Lindblad", nacionalidade: "Inglaterra", equipe: "Racing Bulls", 
-        link: "https://www.formula1.com/en/drivers/arvid-lindblad", pos: '11', pts: '23'},
+        link: "https://www.formula1.com/en/drivers/arvid-lindblad", pos: '11', pts: '29'},
             
     {nome: "Max Verstappen", nacionalidade: "Holanda", equipe: "Red Bull Racing", 
-        link: "https://www.formula1.com/en/drivers/max-verstappen", pos: '6', pts: '112'},
+        link: "https://www.formula1.com/en/drivers/max-verstappen", pos: '6', pts: '127'},
             
     {nome: "Isack Hadjar", nacionalidade: "França", equipe: "Red Bull Racing", 
-        link: "https://www.formula1.com/en/drivers/isack-hadjar", pos: '8', pts: '68'},
+        link: "https://www.formula1.com/en/drivers/isack-hadjar", pos: '8', pts: '71'},
             
     {nome: "Carlos Sainz", nacionalidade: "Espanha", equipe: "Williams", 
         link: "https://www.formula1.com/en/drivers/carlos-sainz", pos: '16', pts: '6'},
@@ -95,7 +95,7 @@ let pilotos = [
         link: "https://www.formula1.com/en/drivers/alexander-albon", pos: '17', pts: '5'},
     
         {nome: "Yuki Tsunoda", nacionalidade: "Japão", equipe: "Racing Bulls", 
-        link: "", pos: '20', pts: '0'}    
+        link: "", pos: '20', pts: '1'}    
     ];
 
 // Carrega os dados dos pilotos
@@ -130,22 +130,22 @@ funcPilotosCorrida();
 // Dados dos construtores
     let construtores = [
         {equipe: "McLaren", 
-            link: "https://www.formula1.com/en/teams/mclaren", pos:'3', pts: '263'},
+            link: "https://www.formula1.com/en/teams/mclaren", pos:'3', pts: '287'},
             
         {equipe: "Mercedes", 
-            link: "https://www.formula1.com/en/teams/mercedes", pos:'1', pts: '425'},
+            link: "https://www.formula1.com/en/teams/mercedes", pos:'1', pts: '468'},
             
         {equipe: "Red Bull Racing",
-            link: "https://www.formula1.com/en/teams/red-bull-racing", pos:'4', pts: '186'},
+            link: "https://www.formula1.com/en/teams/red-bull-racing", pos:'4', pts: '204'},
             
         {equipe: "Ferrari", 
-            link: "https://www.formula1.com/en/teams/ferrari", pos:'2', pts: '338'},
+            link: "https://www.formula1.com/en/teams/ferrari", pos:'2', pts: '346'},
             
         {equipe: "Williams", 
             link: "https://www.formula1.com/en/teams/williams", pos:'9', pts: '11'},
             
         {equipe: "Racing Bulls", 
-            link: "https://www.formula1.com/en/teams/racing-bulls", pos:'5', pts: '66'},
+            link: "https://www.formula1.com/en/teams/racing-bulls", pos:'5', pts: '75'},
             
         {equipe: "Aston Martin", 
             link: "https://www.formula1.com/en/teams/aston-martin", pos:'10', pts: '3'},
@@ -154,7 +154,7 @@ funcPilotosCorrida();
             link: "https://www.formula1.com/en/teams/haas", pos:'7', pts: '21'},
             
         {equipe: "Alpine", 
-            link: "https://www.formula1.com/en/teams/alpine", pos:'6', pts: '63'},
+            link: "https://www.formula1.com/en/teams/alpine", pos:'6', pts: '62'},
             
         {equipe: "Audi", 
             link: "https://www.formula1.com/en/teams/audi", pos:'8', pts: '16'},
