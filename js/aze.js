@@ -28,20 +28,20 @@ atualizarContador();
 
 
 let cronograma = [
-    {tipo: 'Treino 1', data: '24 SET', hora: '05:30', canal: ''},
-    {tipo: 'Treino 2', data: '24 SET', hora: '09:00', canal: ''},
-    {tipo: 'Treino 3', data: '25 SET', hora: '05:30', canal: ''},
-    {tipo: 'Classificação', data: '25 SET', hora: '09:00', canal: ''},
-    {tipo: 'Corrida', data: '26 SET', hora: '08:00', canal: ''}
+    {tipo: 'Treino 1', data: '24 SET', hora: '05:30', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Treino 2', data: '24 SET', hora: '09:00', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Treino 3', data: '25 SET', hora: '05:30', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Classificação', data: '25 SET', hora: '09:00', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Corrida', data: '26 SET', hora: '08:00', canal: 'Sportv | Globoplay | GE'}
 ]
 
 // Cronograma
 function funcTabelaCronograma() {
     const corpo = document.getElementById('corpoTabelaCronograma');
-            
+    const finalizados = [/*'Treino 1', 'Treino 2', 'Treino 3', 'Classificação', 'Corrida'*/]        
     corpo.innerHTML = cronograma.map((p, i) =>`
         <tr>
-           <td>${p.tipo}</td>
+           <td>${finalizados.includes(p.tipo) ? `<del style='background-color: yellow'> ${p.tipo}</del>` : p.tipo}</td>
            <td>${p.data}</td>
            <td>${p.hora}</td>
            <td>${p.canal}</td>
