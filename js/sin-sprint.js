@@ -28,11 +28,11 @@ atualizarContador();
 
 
 let cronograma = [
-    {tipo: 'Treino 1', data: '09 OUT', hora: '05:30', canal: ''},
-    {tipo: 'Classificação Sprint', data: '09 OUT', hora: '09:30', canal: ''},
-    {tipo: 'Sprint', data: '10 OUT', hora: '06:00', canal: ''},
-    {tipo: 'Classificação', data: '10 OUT', hora: '10:00', canal: ''},
-    {tipo: 'Corrida', data: '11 OUT', hora: '09:00', canal: ''}
+    {tipo: 'Treino 1', data: '09 OUT', hora: '05:30', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Classificação Sprint', data: '09 OUT', hora: '09:30', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Sprint', data: '10 OUT', hora: '06:00', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Classificação', data: '10 OUT', hora: '10:00', canal: 'Sportv | Globoplay | GE'},
+    {tipo: 'Corrida', data: '11 OUT', hora: '09:00', canal: 'Globo | Sportv | Globoplay | GE'}
 ]
 
 // Cronograma
