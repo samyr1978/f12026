@@ -41,7 +41,7 @@ let pilotos = [
         link: "https://www.formula1.com/en/drivers/lance-stroll", pos: '22', pts: '0'},
             
     {nome: "Nico Hulkenberg", nacionalidade: "Alemanha", equipe: "Audi", 
-        link: "https://www.formula1.com/en/drivers/nico-hulkenberg", pos:'15', pts: '13'},
+        link: "https://www.formula1.com/en/drivers/nico-hulkenberg", pos:'15', pts: '14'},
     
     {nome: "Gabriel Bortoleto", nacionalidade: "Brasil", equipe: "Audi", 
         link: "https://www.formula1.com/en/drivers/gabriel-bortoleto", pos: '14', pts: '14'},
@@ -53,10 +53,10 @@ let pilotos = [
         link: "https://www.formula1.com/en/drivers/valtteri-bottas", pos: '23', pts: '0'},
             
     {nome: "Charles Leclerc", nacionalidade: "Monaco", equipe: "Ferrari", 
-        link: "https://www.formula1.com/en/drivers/charles-leclerc", pos: '5', pts: '245'},
+        link: "https://www.formula1.com/en/drivers/charles-leclerc", pos: '5', pts: '249'},
             
     {nome: "Lewis Hamilton", nacionalidade: "Inglaterra", equipe: "Ferrari", 
-        link: "https://www.formula1.com/en/drivers/lewis-hamilton", pos: '3', pts: '259'},
+        link: "https://www.formula1.com/en/drivers/lewis-hamilton", pos: '4', pts: '261'},
             
     {nome: "Estaban Ocon", nacionalidade: "França", equipe: "Haas F1 Team", 
         link: "https://www.formula1.com/en/drivers/esteban-ocon", pos: '16', pts: '7'},
@@ -65,28 +65,28 @@ let pilotos = [
         link: "https://www.formula1.com/en/drivers/oliver-bearman", pos: '13', pts: '23'},
             
     {nome: "Lando Norris", nacionalidade: "Inglaterra", equipe: "McLaren", 
-        link: "https://www.formula1.com/en/drivers/lando-norris", pos: '6', pts: '221'},
+        link: "https://www.formula1.com/en/drivers/lando-norris", pos: '6', pts: '246'},
             
     {nome: "Oscar Piastri", nacionalidade: "Austrália", equipe: "McLaren", 
-        link: "https://www.formula1.com/en/drivers/oscar-piastri", pos: '7', pts: '144'},
+        link: "https://www.formula1.com/en/drivers/oscar-piastri", pos: '7', pts: '152'},
             
     {nome: "George Russell", nacionalidade: "Inglaterra", equipe: "Mercedes", 
-        link: "https://www.formula1.com/en/drivers/george-russell", pos: '4', pts: '250'},
+        link: "https://www.formula1.com/en/drivers/george-russell", pos: '3', pts: '262'},
             
     {nome: "Kimi Antonelli", nacionalidade: "Itália", equipe: "Mercedes", 
-        link: "https://www.formula1.com/en/drivers/kimi-antonelli", pos: '1', pts: '380'},
+        link: "https://www.formula1.com/en/drivers/kimi-antonelli", pos: '1', pts: '390'},
             
     {nome: "Liam Lawson", nacionalidade: "Nova Zelândia", equipe: "Red Bull Racing", 
-        link: "https://www.formula1.com/en/drivers/liam-lawson", pos: '9', pts: '83'},
+        link: "https://www.formula1.com/en/drivers/liam-lawson", pos: '9', pts: '89'},
             
     {nome: "Arvid Lindblad", nacionalidade: "Inglaterra", equipe: "Racing Bulls", 
         link: "https://www.formula1.com/en/drivers/arvid-lindblad", pos: '11', pts: '38'},
             
     {nome: "Max Verstappen", nacionalidade: "Holanda", equipe: "Red Bull Racing", 
-        link: "https://www.formula1.com/en/drivers/max-verstappen", pos: '2', pts: '261'},
+        link: "https://www.formula1.com/en/drivers/max-verstappen", pos: '2', pts: '279'},
             
     {nome: "Isack Hadjar", nacionalidade: "França", equipe: "Red Bull Racing", 
-        link: "https://www.formula1.com/en/drivers/isack-hadjar", pos: '8', pts: '107'},
+        link: "https://www.formula1.com/en/drivers/isack-hadjar", pos: '8', pts: '122'},
             
     {nome: "Carlos Sainz", nacionalidade: "Espanha", equipe: "Williams", 
         link: "https://www.formula1.com/en/drivers/carlos-sainz", pos: '18', pts: '7'},
@@ -97,8 +97,11 @@ let pilotos = [
     {nome: "Yuki Tsunoda", nacionalidade: "Japão", equipe: "Racing Bulls", 
         link: "", pos: '20', pts: '1'},
     
-        {nome: "Ryo Hirakawa", nacionalidade: "Japão", equipe: "Haas F1 Team", 
-        link: "", pos: '21', pts: '1'}      
+    {nome: "Ryo Hirakawa", nacionalidade: "Japão", equipe: "Haas F1 Team", 
+        link: "", pos: '21', pts: '1'},
+    
+    {nome: "Rafael Câmara", nacionalidade: "Brasil", equipe: "Haas F1 Team", 
+        link: "", pos: '25', pts: '0'}    
     ];
 
 // Carrega os dados dos pilotos
@@ -133,22 +136,22 @@ funcPilotosCorrida();
 // Dados dos construtores
     let construtores = [
         {equipe: "McLaren", 
-            link: "https://www.formula1.com/en/teams/mclaren", pos:'4', pts: '365'},
+            link: "https://www.formula1.com/en/teams/mclaren", pos:'4', pts: '398'},
             
         {equipe: "Mercedes", 
-            link: "https://www.formula1.com/en/teams/mercedes", pos:'1', pts: '630'},
+            link: "https://www.formula1.com/en/teams/mercedes", pos:'1', pts: '652'},
             
         {equipe: "Red Bull Racing",
-            link: "https://www.formula1.com/en/teams/red-bull-racing", pos:'3', pts: '382'},
+            link: "https://www.formula1.com/en/teams/red-bull-racing", pos:'3', pts: '415'},
             
         {equipe: "Ferrari", 
-            link: "https://www.formula1.com/en/teams/ferrari", pos:'2', pts: '504'},
+            link: "https://www.formula1.com/en/teams/ferrari", pos:'2', pts: '510'},
             
         {equipe: "Williams", 
             link: "https://www.formula1.com/en/teams/williams", pos:'9', pts: '12'},
             
         {equipe: "Racing Bulls", 
-            link: "https://www.formula1.com/en/teams/racing-bulls", pos:'5', pts: '108'},
+            link: "https://www.formula1.com/en/teams/racing-bulls", pos:'5', pts: '114'},
             
         {equipe: "Aston Martin", 
             link: "https://www.formula1.com/en/teams/aston-martin", pos:'10', pts: '7'},
@@ -160,7 +163,7 @@ funcPilotosCorrida();
             link: "https://www.formula1.com/en/teams/alpine", pos:'6', pts: '69'},
             
         {equipe: "Audi", 
-            link: "https://www.formula1.com/en/teams/audi", pos:'8', pts: '27'},
+            link: "https://www.formula1.com/en/teams/audi", pos:'8', pts: '28'},
             
         {equipe: "Cadillac", 
             link: "https://www.formula1.com/en/teams/cadillac", pos:'11', pts: '0'}
